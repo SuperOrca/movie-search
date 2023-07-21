@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --text: #ecedf4;
+    --background: #11131d;
+    --primary: #454d78;
+    --secondary: #181b2a;
+    --accent: #6770a8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    height: 100vh;
+}
+
+header {
+    height: 30vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+.search-bar {
+    padding-top: 4vh;
+}
+
+.search-bar input {
+    padding: 2vh 1vw;
+    width: 40vw;
+    background-color: var(--secondary);
+    outline: none;
+    border: 2px solid var(--text);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.results {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.movie {
+    display: flex;
+    width: 50vw;
+    height: 30vh;
+    background-color: var(--secondary);
+    border: 2px solid var(--text);
+    border-radius: 1rem;
+    position: relative;
+    /* Added position for absolute elements */
+    margin-top: 3vh;
+}
+
+.movie-poster {
+    height: 29.5vh;
+    border-radius: 1rem;
+}
+
+.movie-content {
+    padding: 1vh 1vw;
+}
+
+.movie-title a {
+    text-decoration: none;
+    color: var(--accent);
+    max-width: 40ch;
+}
+
+.movie-actors {
+    margin-top: 2vh;
+}
+
+.movie-actors li {
+    display: inline-block;
+    padding: 1vh 1vw;
+    background-color: var(--background);
+    margin-right: 0.5vw;
+}
+
+.movie-rank {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    font-size: 1.5rem;
+}
+
+.movie-year {
+    margin-top: 0.5vh;
+    font-size: 1.2rem;
+}
